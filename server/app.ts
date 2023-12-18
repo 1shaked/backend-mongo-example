@@ -19,11 +19,11 @@ app.use(
         // createContext,
     }),
 ); 
-app.get('/' , (req, res) => {
-    res.send({
-        message: 'started my project'
-    })
-});
+// app.get('/' , (req, res) => {
+//     res.send({
+//         message: 'started my project'
+//     })
+// });
 
 app.use(
     express.static(path.join(__dirname , '../client'))
