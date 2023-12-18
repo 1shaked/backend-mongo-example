@@ -28,7 +28,7 @@ app.get('/' , (req, res) => {
 
 
 
-app.listen(3301, () => {
-    console.log('listening on 3301')
+app.listen(process?.env?.PORT ?? 3301, () => {
+    console.log('listening on ' + process?.env?.PORT ?? 3301)
 })
 
